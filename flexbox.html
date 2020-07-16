@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, intial-scale=1.0">
+
+	<style type="text/css">
+		.flex{
+			display: flex;
+			/*flex-direction: row;      
+			justify-content: center;
+			flex-wrap:wrap; */
+			/*height: 800px;*/
+			flex-wrap:  wrap;
+			align-content: space-around;
+		}
+		.flex div{
+			padding: 1%;
+			margin: 1%;
+			background-color: skyblue;
+			font-size: 120px;
+			border: 2px solid black;
+
+		}
+
+	</style>
+
+</head>
+<body>
+<div class="flex">
+<!--<div>A</div>
+	<div>B</div>
+	<div>C</div>
+	<div>D</div> -->
+	<div style="order: 3">1</div>
+	<div style="order: 1">2</div>
+	<div style="order: 2">3</div>
+	<div>6</div>
+	<div>7</div>
+	<div style="flex-grow:1">5</div>
+	<div style="flex-basis: 100px">8</div>
+	
+</div>
+</body>
+</html>
